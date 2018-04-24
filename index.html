@@ -47,7 +47,8 @@
 
             addMarker({
                 coord:{lat: 40.7440, lng: -74.0324},
-                iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>Hoboken, NJ</h1>'
             });
             addMarker({coord:{lat: 40.7664, lng: -74.0254}});
             addMarker({coord:{lat: 40.7282, lng: -74.0776}});
@@ -63,6 +64,18 @@
             // check if there is a custom icon
             if (props.iconImage) {
                 marker.setIcon(props.iconImage);
+            }
+
+            // check content
+            if (props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                content: props.content
+            });
+
+            // // add a listner
+            marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+            });
             }
 
             }
