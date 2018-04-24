@@ -12,7 +12,7 @@
 
 >> Google Documentation
 
-[Google Developer Documentation]('https://developers.google.com/maps/documentation/javascript/tutorial#api_key')
+[Google Developer Documentation](https://developers.google.com/maps/documentation/javascript/tutorial#api_key)
 
 
 ![alt text](doc.png)
