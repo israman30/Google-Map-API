@@ -6,6 +6,10 @@
 ![alt text](nyc.png)
 
 ### *Technologies*
+> JavaScript
+
+>> HTML 5
+
 > Google API
 
 > Google API Key
