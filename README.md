@@ -10,7 +10,7 @@
 
 >> HTML 5
 
-> Google API
+> Google Services
 
 >> Google API Key
 
