@@ -45,16 +45,27 @@
             //     infoWindow.open(map, marker);
             // });
 
-            addMarker({
-                coord:{lat: 40.7440, lng: -74.0324},
-                iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-                content: '<h1>Hoboken, NJ</h1>'
-            });
-            addMarker({coord:{lat: 40.7664, lng: -74.0254}});
-            addMarker({
+            // array of makers
+            var markers = [
+                {
+                    coord:{lat: 40.7440, lng: -74.0324},
+                    iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                    content: '<h1>Hoboken, NJ</h1>'
+                },
+                {
+                    coord:{lat: 40.7664, lng: -74.0254}
+                },
+                {
                 coord:{lat: 40.7282, lng: -74.0776},
                 content: '<h1>Jersery City, NJ</h1>'
-                });
+                }
+            ];
+
+            // loop into markers
+            for (var i = 0; i < markers.length; i++) {
+                // add marker
+                addMarker(markers[i]);
+            }
 
             // add marker function
             function addMarker(props){
