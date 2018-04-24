@@ -8,6 +8,15 @@
 ### *Technologies*
 > JavaScript
 
+```js
+ // add marker function
+    function addMarker(props){
+        var marker = new google.maps.Marker({
+        position:props.coord,
+        map: map
+    });
+```
+
 >> HTML 5
 
 > Google Services

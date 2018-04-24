@@ -78,31 +78,30 @@
                 addMarker(markers[i]);
             }
 
-            // add marker function
-            function addMarker(props){
-                var marker = new google.maps.Marker({
-                position:props.coord,
-                map: map,
-                // icon:props.iconImage
-            });
+                // add marker function
+                function addMarker(props){
+                    var marker = new google.maps.Marker({
+                    position:props.coord,
+                    map: map
+                });
 
-            // check if there is a custom icon
-            if (props.iconImage) {
-                marker.setIcon(props.iconImage);
-            }
+                // check if there is a custom icon
+                if (props.iconImage) {
+                    marker.setIcon(props.iconImage);
+                }
 
-            // check content
-            if (props.content){
-                var infoWindow = new google.maps.InfoWindow({
-                content: props.content
-            });
+                // check content
+                if (props.content){
+                    var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                });
 
-            // // add a listner
-            marker.addListener('click', function(){
-                infoWindow.open(map, marker);
-            });
-            }
+                // // add a listner
+                marker.addListener('click', function(){
+                    infoWindow.open(map, marker);
+                });
 
+                }
             }
         }
     </script>
