@@ -4,3 +4,12 @@
 
 ### *Image Sample*
 ![alt text](nyc.png)
+
+### *Technologies*
+> Google API
+
+> Google API Key
+
+>> Google Documentation
+
+![alt text](doc.png)
