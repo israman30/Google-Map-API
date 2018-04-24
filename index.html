@@ -29,6 +29,13 @@
             // new map
             var map = new google.maps.Map(document.getElementById('map'), options);
         
+            // Listen for click on map
+            google.maps.event.addListener(map, 'click',
+            function(event){
+                addMarker({coord:event.latLng});
+            });
+
+
             // // add marker
             // var marker = new google.maps.Marker({
             //     position:{lat: 40.7440, lng: -74.0324},
@@ -58,6 +65,10 @@
                 {
                 coord:{lat: 40.7282, lng: -74.0776},
                 content: '<h1>Jersery City, NJ</h1>'
+                },
+                {
+                    coord:{lat:40.7128, lng: -74.0060},
+                    content: '<h4>New York, NY</h4>'
                 }
             ];
 
