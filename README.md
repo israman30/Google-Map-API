@@ -10,6 +10,7 @@
 
 ```js
  // add marker function
+ // This function display the marker from an array of objects 'coordinates of places'
     function addMarker(props){
         var marker = new google.maps.Marker({
         position:props.coord,
